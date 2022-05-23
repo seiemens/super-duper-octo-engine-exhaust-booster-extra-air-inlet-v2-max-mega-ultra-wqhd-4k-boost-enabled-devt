@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap');
+
+.main {
+    height: 100% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 700px;
+    font-size: clamp(10px, 2vw, 20px);
+    background-image: radial-gradient(#2b104b, 0%, transparent 70%), linear-gradient(#0b161e 40%, #202076);
+
+}
+
+.logo {
+    position: relative;
+    width: 30rem;
+    height: 30rem;
+    z-index: 30;
+}
+
+.text {
+    position: absolute;
+    top: 35%;
+}
+
+.lines {
+    z-index: 20;
+    position: fixed;
+    width: 100%;
+    top: 55%;
+    height: 4em;
+    background: linear-gradient(rgba(147, 254, 89, 0.2) 20%,
+            #00fff2 40%, #00fff2 60%, rgba(89, 254, 136, 0.2) 80%);
+    background-size: 1px 0.5em;
+    box-shadow: 0 0 1em rgba(89, 254, 149, 0.4);
+    transform: translateY(-1em);
+    left: 0;
+}
+
+h3 {
+    position: relative;
+    font-family: 'Exo', serif;
+    font-size: 9em;
+    margin: 0;
+    transform: skew(-15deg);
+    letter-spacing: 0.03em;
+}
+
+h3::after {
+    content: '';
+    position: absolute;
+    top: -0.1em;
+    right: 0.05em;
+    width: 0.4em;
+    height: 0.4em;
+}
+
+h3 span:first-child {
+    display: block;
+    text-shadow: 0 0 0.1em #a8d08b, 0 0 0.2em black, 0 0 5em #ff60ae;
+    -webkit-text-stroke: 0.06em rgba(0, 0, 0, 0.5);
+}
+
+h3 span:last-child {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: linear-gradient(#042c51 25%, #0da2ec 35%,
+            white 50%, #391c77 50%, #a529d4 55%, #ff60ae 75%);
+    -webkit-text-stroke: 0.01em #94a0b9;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h4 {
+    position: absolute;
+    top: 75%;
+    left: 20%;
+    font-family: 'Mr Dafoe', serif;
+    font-size: 5.5em;
+    margin: -0.6em 0 0;
+    color: white;
+    text-shadow: 0 0 0.05em #fff,
+        0 0 0.2em #05e1fe,
+        0 0 0.3em #0560fe;
+    transform: rotate(-7deg);
+}
