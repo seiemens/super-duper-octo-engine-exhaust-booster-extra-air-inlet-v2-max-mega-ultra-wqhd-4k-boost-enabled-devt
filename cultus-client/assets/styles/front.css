@@ -6,17 +6,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    perspective: 700px;
+    flex-direction: column;
+    perspective: 300px;
     font-size: clamp(10px, 2vw, 20px);
     background-image: radial-gradient(#2b104b, 0%, transparent 70%), linear-gradient(#0b161e 40%, #202076);
-
 }
 
 .logo {
     position: relative;
     width: 30rem;
     height: 30rem;
-    z-index: 30;
+    z-index: 1;
+}
+
+.logo img {
+    position: absolute;
+    bottom: 25%;
 }
 
 .text {
@@ -36,6 +41,8 @@
     box-shadow: 0 0 1em rgba(89, 254, 149, 0.4);
     transform: translateY(-1em);
     left: 0;
+    z-index: -1;
+
 }
 
 h3 {
@@ -76,7 +83,7 @@ h3 span:last-child {
 h4 {
     position: absolute;
     top: 75%;
-    left: 20%;
+    left: 5%;
     font-family: 'Mr Dafoe', serif;
     font-size: 5.5em;
     margin: -0.6em 0 0;
@@ -85,4 +92,58 @@ h4 {
         0 0 0.2em #05e1fe,
         0 0 0.3em #0560fe;
     transform: rotate(-7deg);
+}
+
+
+
+.link {
+    position: relative;
+    margin-top: 3rem;
+    font-family: 'Exo', serif;
+    border-radius: 0.5rem;
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 3rem;
+    padding: 1rem;
+    margin: 1rem;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-shadow: 0.3rem 0.3rem black;
+    transition: 0.25s;
+    z-index: 100;
+}
+
+.link:hover {
+    text-shadow: 0.1rem 0.1rem black;
+    background-color: #05e1fe;
+    box-shadow: 0 0 2em #05e1fe, 0 0 2em #0560fe;
+    animation: 0.5s flicker infinite;
+    transform: translate(-0.2rem, -0.2rem);
+    animation: 4s lsd infinite;
+}
+
+.grid {
+    position: absolute;
+    background: linear-gradient(90deg, #0560fe 10%, transparent 10%), linear-gradient(180deg, #0560fe, 10%, transparent 10%);
+    background-size: 20px 20px;
+    opacity: 0.5;
+    bottom: -10%;
+    width: 1000%;
+    overflow: hidden;
+    height: 80%;
+    transform: rotateX(70deg);
+
+    z-index: -500;
+}
+
+
+@keyframes lsd {
+
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
 }
