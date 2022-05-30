@@ -1,0 +1,39 @@
+.header {
+    font-family: 'Exo 2', sans-serif;
+    height: 7.5rem;
+    width: 100%;
+    display: flex;
+}
+
+.logo {
+    width: fit-content;
+    float: left;
+}
+
+.categories {
+    margin-left: 4rem;
+    width: 100%;
+    height: 100%;
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: 100;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    transition: 0.5s;
+}
+
+a:hover {
+    text-shadow: 0.1rem 0.1rem black;
+    background-color: #05e1fe;
+    box-shadow: 0 0 2em #05e1fe, 0 0 2em #0560fe;
+
+}

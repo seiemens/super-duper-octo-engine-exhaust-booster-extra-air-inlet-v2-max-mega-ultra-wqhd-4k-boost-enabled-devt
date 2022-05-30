@@ -1,0 +1,8 @@
+.bg {
+    width: 100%;
+    height: 100%;
+    perspective: 300px;
+    font-size: clamp(10px, 2vw, 20px);
+    background-image: radial-gradient(#2b104b, 0%, transparent 70%), linear-gradient(#0b161e 40%, #202076);
+
+}
