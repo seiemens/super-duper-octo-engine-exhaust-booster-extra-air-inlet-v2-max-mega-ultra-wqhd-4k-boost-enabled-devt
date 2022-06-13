@@ -1,6 +1,11 @@
 <template>
   <div class="products">
-    <Product />
+    <Product
+      v-for="prod in products"
+      :key="prod.id"
+      :name="prod.name"
+      :price="prod.price"
+    />
   </div>
 </template>
 
@@ -8,5 +13,20 @@
 
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      products: [
+        { name: "hello", price: 5.44, id: 1 },
+        { name: "hello", price: 5.44, id: 1 },
+        { name: "hello", price: 5.44, id: 1 },
+        { name: "hello", price: 5.44, id: 1 },
+        { name: "hello", price: 5.44, id: 1 },
+        { name: "hello", price: 5.44, id: 1 },
+        { name: "hello", price: 5.44, id: 1 },
+        { name: "hello", price: 5.44, id: 1 },
+      ],
+    };
+  },
+};
 </script>

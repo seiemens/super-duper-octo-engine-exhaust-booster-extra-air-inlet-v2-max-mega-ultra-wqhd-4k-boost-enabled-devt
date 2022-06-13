@@ -1,12 +1,35 @@
 .prod {
+    position: relative;
     height: 20rem;
     width: 15rem;
-    background-color: #042c51;
+    background-image: linear-gradient(#0dd9ec, #0084ff);
     margin: 1rem;
     border-radius: 0.5rem;
     transition: 0.25s;
 }
 
+.img {
+    width: 14rem;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.name {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 2rem;
+
+}
+
+.price {
+    position: absolute;
+    font-family: 'Mr Dafoe', serif;
+    float: right;
+    bottom: 0;
+    right: 0;
+    margin: 0.5rem;
+    color: #ffffff;
+}
+
 .prod:hover {
-    background-color: #0da2ec;
+    background-color: #00ff08;
 }
