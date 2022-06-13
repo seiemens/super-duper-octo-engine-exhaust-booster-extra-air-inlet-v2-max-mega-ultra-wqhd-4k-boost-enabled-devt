@@ -12,11 +12,11 @@
       </div>
       <h4>best toilets.</h4>
     </div>
-    <a href="" class="link">
+    <a href="/shop" class="link">
       <span>Our Products</span>
     </a>
   </div>
 </template>
 
-<style src="~/assets/styles/front.css">
+<style src="~/assets/styles/front.css" scoped>
 </style>
